@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Challenge</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!--Fonts and Icons-->
+    <script src="https://kit.fontawesome.com/3964f75dd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto fullscreen">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-home"></i> Home</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i> Preferences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-chart-bar"></i> Stats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i> Help</a>
+              </li>
+            </ul>
+    </nav>
+        <ul class="nav nav-tabs mt-5 pt-3">
+            <li class="nav-item"><a class="nav-link active" href="#create" role="tab" data-toggle="tab">Create</a></li>
+            <li class="nav-item"><a class="nav-link" href="#memorize" role="tab" data-toggle="tab">Memorize</a></li>
+            <li class="nav-item"><a class="nav-link" href="#games" role="tab" data-toggle="tab">Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="#badges" role="tab" data-toggle="tab">Badges</a></li>
+        </ul>
+        <div class="tab-content border-0">
+            <div role="tabpanel" class="tab-pane fade show active" id="create">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto my-2">
+                            <div class="card card-style-create">
+                                
+                                <h4 class="card-title text-center text-white"> Memory Palace</h4>
+                                <div class="card-body py-0">
+                                    <p class="text-white text-center">START HERE<br /> Make your first memory palace</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mx-auto my-2">
+                            <div class="card card-style-create">
+                                
+                                <h4 class="card-title text-center text-white">Lists</h4>
+                                <div class="card-body py-0">
+                                    <p class="text-center text-white">Next we will memorize our shopping list using the memory palace</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mx-auto my-2">
+                            <div class="card card-style-create">
+                                
+                                <h4 class="card-title text-center text-white">Numbers</h4>
+                                <div class="card-body py-0">
+                                    <p class="text-white text-center">Now turn images into numbers. A toad? That's 11 of course. And a moose? That's 30 </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mx-auto my-2">
+                            <div class="card card-style-create">
+                                
+                                <h4 class="card-title text-center text-white">Person Action Object</h4>
+                                <div class="card-body py-0">
+                                    <p class="text-white text-center">Once you've practiced the other techniques, click here to remember 3 things in just one image</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div role="tabpanel" class="tab-pane fade show active" id="memorize">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                            <div class="card card-style">
+                                <div class="card-body">
+                                    <p class="text-center text-white"><i class="fa-brands fa-fort-awesome fa-4x"></i></p>                            
+                                </div>
+                                <h4 class="card-title text-white text-center">Memory Palace</h4>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                            <div class="card card-style">
+                                <div class="card-body">
+                                    <p class="text-center text-white"><i class="fa-solid fa-list fa-4x"></i></p>                            
+                                </div>
+                                <h4 class="card-title text-white text-center">Lists</h4>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                            <div class="card card-style">
+                                <div class="card-body">
+                                    <p class="number-icon text-center text-white">#</p>                            
+                                </div>
+                                <h4 class="card-title text-white text-center">Numbers</h4>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                            <div class="card card-style">
+                                <div class="card-body">
+                                    <div class="box mx-auto">
+                                        <div class="card-sm-1"></div>
+                                        <div class="card-sm-2"></div>
+                                    </div>
+                                </div>
+                                <h4 class="card-title text-center text-white">Cards</h4>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="games">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                            <div class="card card-style">  
+                                <div class="card-body">
+                                    <div class="text-center text-white pb-0"><i class="fa-solid fa-4x fa-chess-rook"></i></div>                            
+                                </div>
+                                <h4 class="card-title text-white text-center">Palace Tour</h4>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                            <div class="card card-style">
+                                <div class="card-body">
+                                    <p class="text-center text-white"><i class="fa-solid fa-2 fa-4x"></i><i class="fa-solid fa-8 fa-4x"></i></p>                            
+                                </div>
+                                <h4 class="card-title text-white text-center">Quick Numbers</h4>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                            <div class="card card-style">  
+                                <div class="card-body">
+                                    <h3 class="text-center text-white pb-0">P</h3><h3 class="text-center text-white pt-n1">O   A</h3>                            
+                                </div>
+                                <h4 class="card-title text-white text-center">Speed Check</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="badges">
+                <div class="container">
+                    <div class="row">
+                        <div class="col mx-auto my-2">
+                            <div class="card border-0">
+                                <div class="card-body card-style-2 mx-auto">
+                                    <p class="text-center text-white"><i class="fa-solid fa-4x fa-person-walking-luggage"></i></p>                            
+                                </div>
+                                <p class="card-title text-center">Made your own <br /> P-A-O system</p>
+                            </div>
+                        </div>
+                        <div class="col mx-auto my-2">
+                            <div class="card border-0">
+                                <div class="card-body card-style-2 mx-auto">
+                                    <p class="text-center text-white"><i class="fa-regular fa-4x fa-square-check"></i></p>                            
+                                </div>
+                                <p class="card-title text-center">Memorized your first deck of cards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
