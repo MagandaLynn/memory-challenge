@@ -1,0 +1,12 @@
+$(function(){
+    $('#loginModal').modal('show');
+    $('#statsButton').click(function(){
+        $('#statsModal').modal('show');
+    });
+    $('#helpButton').click(function(){
+        $('#helpModal').modal('show');
+    });
+    $('#settingsButton').click(function(){
+        $('#settingsModal').modal('show');
+    });
+});

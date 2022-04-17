@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Challenge</title>
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- endbuild -->
+
+    <script src="https://kit.fontawesome.com/3964f75dd1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand bg-light navbar-light sticky-top">
+        <ul class="navbar-nav mr-auto fullscreen">
+            <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fa-solid fa-home"></i></a></li>             
+            <li class="nav-item"><a class="nav-link" href="create.html">Create</a></li>
+            <li class="nav-item"><a class="nav-link" href="memorize.html">Memorize</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto fullscreen">
+            <li class="nav-item">
+                <a class="nav-link" id="statsButton"><i class="fa-solid fa-chart-bar"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="helpButton"><i class="fa-solid fa-circle-question"></i></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" id="settingsButton"><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+</nav>            
+    
+    <!--stats modal-->
+    <div id="statsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Stats</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--help modal-->
+    <div id="helpModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Help</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--settings modal-->
+    <div id="settingsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Settings</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                <div class="card card-style">  
+                    <div class="card-body">
+                        <div class="text-center text-white pb-0"><i class="fa-solid fa-4x fa-chess-rook"></i></div>                            
+                    </div>
+                    <h4 class="card-title text-white text-center">Palace Tour</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                <div class="card card-style">
+                    <div class="card-body">
+                        <p class="text-center text-white"><i class="fa-solid fa-2 fa-4x"></i><i class="fa-solid fa-8 fa-4x"></i></p>                            
+                    </div>
+                    <h4 class="card-title text-white text-center">Quick Numbers</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                <div class="card card-style">  
+                    <div class="card-body">
+                        <h3 class="text-center text-white pb-0">P</h3><h3 class="text-center text-white pt-n1">O   A</h3>                            
+                    </div>
+                    <h4 class="card-title text-white text-center">Speed Check</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- endbuild -->
+
+    
+  </body>
+</html>

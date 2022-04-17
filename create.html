@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Challenge</title>
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- endbuild -->
+
+    <script src="https://kit.fontawesome.com/3964f75dd1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand bg-light navbar-light sticky-top">
+        <ul class="navbar-nav mr-auto fullscreen">
+            <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fa-solid fa-home"></i></a></li>             
+            <li class="nav-item"><a class="nav-link" href="#">Create</a></li>
+            <li class="nav-item"><a class="nav-link" href="memorize.html">Memorize</a></li>
+            <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto fullscreen">
+            <li class="nav-item">
+                <a class="nav-link" id="statsButton"><i class="fa-solid fa-chart-bar"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="helpButton"><i class="fa-solid fa-circle-question"></i></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" id="settingsButton"><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+    </nav>    
+        
+    <!--stats modal-->
+    <div id="statsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Stats</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--help modal-->
+    <div id="helpModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Help</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--settings modal-->
+    <div id="settingsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Settings</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto my-2">
+                <div class="card card-style-create">
+                
+                    <h4 class="card-title text-center text-white"> Memory Palace</h4>
+                    <div class="card-body py-0">
+                        <p class="text-white text-center">START HERE<br /> Make your first memory palace</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-6 mx-auto my-2">
+                <div class="card card-style-create">
+                    
+                    <h4 class="card-title text-center text-white">Lists</h4>
+                    <div class="card-body py-0">
+                        <p class="text-center text-white">Next we will memorize our shopping list using the memory palace</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mx-auto my-2">
+                <div class="card card-style-create">
+                    
+                    <h4 class="card-title text-center text-white">Numbers</h4>
+                    <div class="card-body py-0">
+                        <p class="text-white text-center">Now turn images into numbers. A toad? That's 11 of course. And a moose? That's 30 </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mx-auto my-2">
+                <div class="card card-style-create">
+                    
+                    <h4 class="card-title text-center text-white">Person Action Object</h4>
+                    <div class="card-body py-0">
+                        <p class="text-white text-center">Once you've practiced the other techniques, click here to remember 3 things in just one image</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- endbuild -->
+
+    
+  </body>
+</html>

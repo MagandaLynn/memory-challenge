@@ -15,180 +15,132 @@
     <script src="https://kit.fontawesome.com/3964f75dd1.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!--navbar-->
+    <nav class="navbar navbar-expand bg-light navbar-light sticky-top">
             <ul class="navbar-nav mr-auto fullscreen">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-solid fa-home"></i> Home</a>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i> Preferences</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-chart-bar"></i> Stats</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i> Help</a>
-              </li>
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-home"></i></a></li>             
+                <li class="nav-item"><a class="nav-link" href="create.html">Create</a></li>
+                <li class="nav-item"><a class="nav-link" href="memorize.html">Memorize</a></li>
+                <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
             </ul>
-    </nav>
-        <ul class="nav nav-tabs mt-5 pt-3">
-            <li class="nav-item"><a class="nav-link active" href="#create" role="tab" data-toggle="tab">Create</a></li>
-            <li class="nav-item"><a class="nav-link" href="#memorize" role="tab" data-toggle="tab">Memorize</a></li>
-            <li class="nav-item"><a class="nav-link" href="#games" role="tab" data-toggle="tab">Games</a></li>
-            <li class="nav-item"><a class="nav-link" href="#badges" role="tab" data-toggle="tab">Badges</a></li>
-        </ul>
-        <div class="tab-content border-0">
-            <div role="tabpanel" class="tab-pane fade show active" id="create">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 mx-auto my-2">
-                            <div class="card card-style-create">
-                                
-                                <h4 class="card-title text-center text-white"> Memory Palace</h4>
-                                <div class="card-body py-0">
-                                    <p class="text-white text-center">START HERE<br /> Make your first memory palace</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-6 mx-auto my-2">
-                            <div class="card card-style-create">
-                                
-                                <h4 class="card-title text-center text-white">Lists</h4>
-                                <div class="card-body py-0">
-                                    <p class="text-center text-white">Next we will memorize our shopping list using the memory palace</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mx-auto my-2">
-                            <div class="card card-style-create">
-                                
-                                <h4 class="card-title text-center text-white">Numbers</h4>
-                                <div class="card-body py-0">
-                                    <p class="text-white text-center">Now turn images into numbers. A toad? That's 11 of course. And a moose? That's 30 </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-6 mx-auto my-2">
-                            <div class="card card-style-create">
-                                
-                                <h4 class="card-title text-center text-white">Person Action Object</h4>
-                                <div class="card-body py-0">
-                                    <p class="text-white text-center">Once you've practiced the other techniques, click here to remember 3 things in just one image</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <ul class="navbar-nav ml-auto fullscreen">
+                <li class="nav-item">
+                    <a class="nav-link"  id="statsButton"><i class="fa-solid fa-chart-bar"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="helpButton"><i class="fa-solid fa-circle-question"></i></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" id="settingsButton"><i class="fa-solid fa-gear"></i></a></li>
+            </ul>
+    </nav>    
+    <!--login modal-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            
-            <div role="tabpanel" class="tab-pane fade show" id="memorize">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <p class="text-center text-white"><i class="fa-brands fa-fort-awesome fa-4x"></i></p>                            
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
                                 </div>
-                                <h4 class="card-title text-white text-center">Memory Palace</h4>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <p class="text-center text-white"><i class="fa-solid fa-list fa-4x"></i></p>                            
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
                                 </div>
-                                <h4 class="card-title text-white text-center">Lists</h4>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <p class="number-icon text-center text-white">#</p>                            
-                                </div>
-                                <h4 class="card-title text-white text-center">Numbers</h4>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <div class="box mx-auto">
-                                        <div class="card-sm-1"></div>
-                                        <div class="card-sm-2"></div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
                                     </div>
                                 </div>
-                                <h4 class="card-title text-center text-white">Cards</h4>
                             </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="games">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
-                            <div class="card card-style">  
-                                <div class="card-body">
-                                    <div class="text-center text-white pb-0"><i class="fa-solid fa-4x fa-chess-rook"></i></div>                            
-                                </div>
-                                <h4 class="card-title text-white text-center">Palace Tour</h4>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
                             </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
-                            <div class="card card-style">
-                                <div class="card-body">
-                                    <p class="text-center text-white"><i class="fa-solid fa-2 fa-4x"></i><i class="fa-solid fa-8 fa-4x"></i></p>                            
-                                </div>
-                                <h4 class="card-title text-white text-center">Quick Numbers</h4>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
-                            <div class="card card-style">  
-                                <div class="card-body">
-                                    <h3 class="text-center text-white pb-0">P</h3><h3 class="text-center text-white pt-n1">O   A</h3>                            
-                                </div>
-                                <h4 class="card-title text-white text-center">Speed Check</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="badges">
-                <div class="container">
-                    <div class="row">
-                        <div class="col mx-auto my-2">
-                            <div class="card border-0">
-                                <div class="card-body card-style-2 mx-auto">
-                                    <p class="text-center text-white"><i class="fa-solid fa-4x fa-person-walking-luggage"></i></p>                            
-                                </div>
-                                <p class="card-title text-center">Made your own <br /> P-A-O system</p>
-                            </div>
-                        </div>
-                        <div class="col mx-auto my-2">
-                            <div class="card border-0">
-                                <div class="card-body card-style-2 mx-auto">
-                                    <p class="text-center text-white"><i class="fa-regular fa-4x fa-square-check"></i></p>                            
-                                </div>
-                                <p class="card-title text-center">Memorized your first deck of cards</p>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--stats modal-->
+    <div id="statsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Stats</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--help modal-->
+    <div id="helpModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Help</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--settings modal-->
+    <div id="settingsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Settings</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Homepage content-->
+    <div class="container">
+        <div class="row">
+            
+            <div class="col text-center mx-auto mt-2">
+                <div>
+                    <h3>Welcome back Crystal</h3>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-10 text-center mx-auto mt-4">
+                <div>
+                    <h4>Current Goals:</h4>            
+                    <p>
+                        Go to "create" page and start your memory palace
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>    
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
     <!-- endbuild -->
 
     

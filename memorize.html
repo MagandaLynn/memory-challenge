@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Challenge</title>
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- endbuild -->
+
+    <script src="https://kit.fontawesome.com/3964f75dd1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand bg-light navbar-light sticky-top">
+        <ul class="navbar-nav mr-auto fullscreen">
+            <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fa-solid fa-home"></i></a></li>             
+            <li class="nav-item"><a class="nav-link" href="create.html">Create</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Memorize</a></li>
+            <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+        </ul>
+        
+        <ul class="navbar-nav ml-auto fullscreen">
+            <li class="nav-item">
+                <a class="nav-link" id="statsButton"><i class="fa-solid fa-chart-bar"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="helpButton"><i class="fa-solid fa-circle-question"></i></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" id="settingsButton"><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+    </nav>   
+        
+    <!--login modal-->
+    
+    <!--stats modal-->
+    <div id="statsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Stats</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--help modal-->
+    <div id="helpModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Help</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--settings modal-->
+    <div id="settingsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Settings</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+            
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                <div class="card card-style">
+                    <div class="card-body">
+                        <p class="text-center text-white"><i class="fa-brands fa-fort-awesome fa-4x"></i></p>                            
+                    </div>
+                    <h4 class="card-title text-white text-center">Memory Palace</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                <div class="card card-style">
+                    <div class="card-body">
+                        <p class="text-center text-white"><i class="fa-solid fa-list fa-4x"></i></p>                            
+                    </div>
+                    <h4 class="card-title text-white text-center">Lists</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                <div class="card card-style">
+                    <div class="card-body">
+                        <p class="number-icon text-center text-white">#</p>                            
+                    </div>
+                    <h4 class="card-title text-white text-center">Numbers</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mx-auto my-2">
+                <div class="card card-style">
+                    <div class="card-body">
+                        <div class="box mx-auto">
+                            <div class="card-sm-1"></div>
+                            <div class="card-sm-2"></div>
+                        </div>
+                    </div>
+                    <h4 class="card-title text-center text-white">Cards</h4>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- endbuild -->
+
+    
+    </body>
+</html>
