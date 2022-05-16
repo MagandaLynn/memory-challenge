@@ -1,5 +1,5 @@
 $(function(){
-    $('#loginModal').modal('show');
+//    $('#loginModal').modal('show');
     $('#statsButton').click(function(){
         $('#statsModal').modal('show');
     });
@@ -8,5 +8,14 @@ $(function(){
     });
     $('#settingsButton').click(function(){
         $('#settingsModal').modal('show');
+    });
+    $('#learnMoreLink').click(function(){
+        $('#learnMoreModal').modal('show');
+    });
+    $('#registerButton').click(function(){
+        $('#registerModal').modal('show');
+    });
+    $('#login-submit').click(function(){
+        window.location.href='landing.html';  
     });
 });

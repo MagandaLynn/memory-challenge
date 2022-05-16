@@ -2,6 +2,13 @@
 .container{
     height: 90vh;
 }
+
+.img-cover{
+    object-fit: cover;
+}
+.color-1{
+    background-color: #669BBC;
+}
 .card-style-create{
     background: #0a9396;
     border-radius: 10px;
